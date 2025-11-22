@@ -1,0 +1,8 @@
+{
+  "name": "SignalLink SOS",
+  "description": "A dual-mode distress signal application. Acts as a Sender to broadcast location and status using simulated RF logic, or a Receiver to track signals via visual radar and maps.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}
