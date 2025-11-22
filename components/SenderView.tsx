@@ -50,7 +50,7 @@ const SenderView: React.FC<{ onBack: () => void }> = ({ onBack }) => {
 
     setIsAnalyzing(true);
     
-    // Use Gemini to analyze the message if provided, otherwise default
+    // Use local service to analyze context (Offline capable)
     const context = messageInput.trim() ? await analyzeSOSContext(messageInput) : {
         type: EmergencyType.OTHER,
         priority: 'HIGH',
